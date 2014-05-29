@@ -1,0 +1,28 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[1] mach-rb2011.c
+$ cd ${OpenWRT SRC}/trunk/target/linux/ar71xx/files/arch/mips/ath79
+$ vim mach-rb2011.c
+
+### diff ###
+324,325d323
+< MIPS_MACHINE_NONAME(ATH79_MACH_RB_2011r5, "2011r5", rb2011us_setup);
+<
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[2] 610-MIPS-ath79-openwrt-machines.patch
+$ cd ${OpenWRT SRC}/trunk/target/linux/ar71xx/patches-3.10
+$ vim 610-MIPS-ath79-openwrt-machines.patch
+
+### diff ### 
+3c3
+< @@ -16,22 +16,143 @@
+---
+> @@ -16,22 +16,142 @@
+73d72
+< +     ATH79_MACH_RB_2011r5,           /* Mikrotik RouterBOARD 2011UAS */
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
