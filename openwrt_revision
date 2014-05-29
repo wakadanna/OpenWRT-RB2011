@@ -1,0 +1,5 @@
+revision 40866.
+
+### Get OpenWRT Source Code ###
+$ svn co -r 40866 svn://svn.openwrt.org/openwrt/trunk/
+
